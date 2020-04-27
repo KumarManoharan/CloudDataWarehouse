@@ -32,7 +32,7 @@ Using the song and event datasets, you'll need to create a star schema optimized
 **time** - timestamps of records in songplays broken down into specific units consists of columns start_time(PRIMARY KEY SORTKEY DISTKEY), hour, day, week, month, year, weekday
 
 
-## The project files:##
+## The project files:
 
 1. create_table.py - Creates fact and dimension tables for the star schema in Redshift.
 2. etl.py          - Loads data from S3 into staging tables on Redshift and then process that data into your analytics tables on Redshift.
